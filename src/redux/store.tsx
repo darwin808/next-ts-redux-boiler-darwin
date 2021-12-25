@@ -1,6 +1,7 @@
 import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit"
-import { persistCombineReducers } from "reduxjs-toolkit-persist"
-import storage from "reduxjs-toolkit-persist/lib/storage"
+// import { persistCombineReducers } from "reduxjs-toolkit-persist"
+import { persistReducer } from "redux-persist"
+import storage from "redux-persist/lib/storage"
 import { tokenReducer } from "../redux/reducers/auth"
 
 const persistConfig = {
@@ -12,7 +13,7 @@ const persistConfig = {
 const reducer = {
   token: tokenReducer
 }
-const persistedReducer = persistCombineReducers(persistConfig, reducer)
+const persistedReducer = persistReducer(persistConfig, reducer.token)
 export const store = configureStore({
   reducer: persistedReducer
 })
