@@ -17,6 +17,16 @@ module.exports = {
     "require-jsdoc": 0,
     "no-use-before-define": "off",
     "react/react-in-jsx-scope": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        js: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never"
+      }
+    ],
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx", "tsx"] }],
     "import/extensions": [
       "error",
@@ -44,7 +54,7 @@ module.exports = {
     },
     "import/resolver": {
       node: {
-        extensions: [".js", ".jsx", ".tsx"]
+        extensions: [".js", ".jsx", ".tsx", "ts"]
       }
     }
   }
