@@ -1,7 +1,6 @@
 import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit"
-import { persistStore, persistReducer } from "redux-persist"
 import { persistCombineReducers } from "reduxjs-toolkit-persist"
-import storage from "redux-persist/lib/storage" // defaults to localStorage for web
+import storage from "reduxjs-toolkit-persist/lib/storage"
 import { tokenReducer } from "../redux/reducers/auth"
 
 const persistConfig = {
