@@ -4,14 +4,14 @@ import { useAppDispatch, useAppSelector } from "../redux/hooks"
 import { RootState } from "../redux/store"
 
 const Home: NextPage = () => {
-  const token = useAppSelector((e: RootState) => e.token)
-  const dispatch = useAppDispatch()
-  return (
-    <div className="bg-red-200 h-screen">
-      <button onClick={() => dispatch(tokenActions.getAccessToken("wewewe"))}>OK</button>
-      <div>{JSON.stringify(token)}</div>
-    </div>
-  )
+   const token = useAppSelector((e: RootState) => e.token)
+   const dispatch = useAppDispatch()
+   return (
+      <div className="bg-red-200 h-screen">
+         <button onClick={() => dispatch(tokenActions.getAccessToken("wewewe"))}>OK</button>
+         <div>{JSON.stringify(token)}</div>
+      </div>
+   )
 }
 
 export default Home

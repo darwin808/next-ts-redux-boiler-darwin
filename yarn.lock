@@ -1817,10 +1817,10 @@ get-uri@3:
     fs-extra "^8.1.0"
     ftp "^0.3.10"
 
-gitmoji-cli@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/gitmoji-cli/-/gitmoji-cli-4.7.0.tgz#1e77e4968ef15b8d1cc1e9c36b7220885fae22d0"
-  integrity sha512-8PVebGkXGXlNE2T7You4gzX4SFiULZja38LInfmnJQFfMgmeOT8br/WpirCkqhBVA28tTMYflQj5QGoeGLfTUQ==
+gitmoji-cli@^4.8.0:
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/gitmoji-cli/-/gitmoji-cli-4.8.0.tgz#e9c7430cbbc9d25eb1a2bb4400651030c765669e"
+  integrity sha512-ZsO1OzFXEM53+K5yUUHRg7fwJqomkq2YLfgrKUr4rbIccQAybNNyp2x91GjDhnky7I/hkeiio5iImtTLr23KEw==
   dependencies:
     chalk "^4.1.0"
     conf "^10.0.1"
