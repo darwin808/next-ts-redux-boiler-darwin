@@ -1,6 +1,6 @@
-/* eslint-disable spaced-comment */
 import { Action, combineReducers, configureStore, ThunkAction } from "@reduxjs/toolkit"
-// import { pageReducer, userReducer } from "../redux/reducers"
+import { tokenReducer } from "../redux/reducers/auth"
+
 import { persistStore, persistReducer } from "redux-persist"
 import storage from "redux-persist/lib/storage" // defaults to localStorage for web
 
@@ -10,8 +10,7 @@ const persistConfig = {
 }
 
 const reducer = combineReducers({
-  // page: pageReducer,
-  // user: userReducer
+  token: tokenReducer
 })
 const persistedReducer = persistReducer(persistConfig, reducer)
 
