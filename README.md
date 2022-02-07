@@ -12,10 +12,6 @@
 ## How to commit?
 
 ```
-git cz
-```
-
-```
 yarn commit
 ```
 
