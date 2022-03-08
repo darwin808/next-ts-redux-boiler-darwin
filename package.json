@@ -15,36 +15,36 @@
       "commit": "git add . && cz"
    },
    "dependencies": {
-      "@reduxjs/toolkit": "^1.7.2",
+      "@reduxjs/toolkit": "^1.8.0",
       "@tailwindcss/line-clamp": "^0.3.1",
-      "axios": "^0.25.0",
-      "eslint-config-prettier": "^8.3.0",
-      "next": "12.0.10",
+      "axios": "^0.26.0",
+      "eslint-config-prettier": "^8.5.0",
+      "next": "12.1.0",
       "react": "17.0.2",
       "react-dom": "17.0.2",
       "react-redux": "^7.2.6",
       "redux-persist": "^6.0.0",
-      "reduxjs-toolkit-persist": "^7.0.7",
-      "swr": "^1.2.1"
+      "reduxjs-toolkit-persist": "^7.2.1",
+      "swr": "^1.2.2"
    },
    "devDependencies": {
-      "@types/node": "17.0.17",
+      "@types/node": "17.0.21",
       "@types/react": "17.0.39",
-      "@typescript-eslint/eslint-plugin": "^5.11.0",
-      "@typescript-eslint/parser": "^5.11.0",
+      "@typescript-eslint/eslint-plugin": "^5.14.0",
+      "@typescript-eslint/parser": "^5.14.0",
       "autoprefixer": "^10.4.2",
       "commitizen-emoji": "^1.0.5",
       "cz-conventional-changelog": "3.3.0",
-      "eslint": "^8.8.0",
+      "eslint": "^8.10.0",
       "eslint-config-google": "^0.14.0",
-      "eslint-config-next": "12.0.10",
-      "eslint-plugin-react": "^7.28.0",
+      "eslint-config-next": "12.1.0",
+      "eslint-plugin-react": "^7.29.3",
       "gitmoji-cli": "^4.8.0",
       "husky": "^7.0.0",
-      "postcss": "^8.4.6",
+      "postcss": "^8.4.8",
       "prettier": "^2.5.1",
-      "tailwindcss": "^3.0.21",
-      "typescript": "4.5.5"
+      "tailwindcss": "^3.0.23",
+      "typescript": "4.6.2"
    },
    "config": {
       "commitizen": {
