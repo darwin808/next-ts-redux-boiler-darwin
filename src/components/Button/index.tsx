@@ -1,5 +1,5 @@
 import React from "react"
-import { Button as Iprops } from "../../types/index"
+import { Button as Iprops } from "types/index"
 
 const Button = ({ disabled, children, type, onClick }: Iprops) => {
    return (
