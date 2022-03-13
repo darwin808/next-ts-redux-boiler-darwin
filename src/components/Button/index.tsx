@@ -1,11 +1,5 @@
 import React from "react"
-
-interface Iprops {
-   children: any
-   type?: string
-   disabled?: boolean
-   onClick?: () => void
-}
+import { Button as Iprops } from "../../types/index"
 
 const Button = ({ disabled, children, type, onClick }: Iprops) => {
    return (

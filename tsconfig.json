@@ -13,8 +13,17 @@
       "resolveJsonModule": true,
       "isolatedModules": true,
       "jsx": "preserve",
-      "incremental": true
+      "incremental": true,
+      "baseUrl": "./src"
    },
-   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "./node_modules/redux-persist/types"],
+
+   "include": [
+      "next-env.d.ts",
+      "**/*.ts",
+      "**/*.tsx",
+      "./node_modules/redux-persist/types",
+      "jest.setup.js",
+      "jest.config.js"
+   ],
    "exclude": ["node_modules"]
 }

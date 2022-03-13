@@ -1,8 +1,8 @@
 import type { NextPage } from "next"
-import Button from "../components/Button"
-import { tokenActions } from "../redux/actions/auth"
-import { useAppDispatch, useAppSelector } from "../redux/hooks"
-import { RootState } from "../redux/store"
+import Button from "components/Button"
+import { tokenActions } from "redux/actions/auth"
+import { useAppDispatch, useAppSelector } from "redux/hooks"
+import { RootState } from "redux/store"
 
 const Home: NextPage = () => {
    const token = useAppSelector((e: RootState) => e.token)
