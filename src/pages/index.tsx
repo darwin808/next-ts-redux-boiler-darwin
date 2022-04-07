@@ -9,7 +9,7 @@ const Home: NextPage = () => {
    const dispatch = useAppDispatch()
    return (
       <div className="bg-red-200 h-screen">
-         <button onClick={() => dispatch(tokenActions.getAccessToken("wewewe"))}>OK</button>
+         <button onClick={() => dispatch(tokenActions.getAccessToken("wewewe123"))}>OK</button>
          <div>{JSON.stringify(token)}</div>
          <Button>OKOKOKOK</Button>
       </div>
