@@ -6,11 +6,11 @@ import storage from "redux-persist/lib/storage" // defaults to localStorage for 
 
 const persistConfig = {
    key: "root",
-   storage
+   storage,
 }
 
 const reducer = combineReducers({
-   token: tokenReducer
+   token: tokenReducer,
 })
 const persistedReducer = persistReducer(persistConfig, reducer)
 
@@ -19,8 +19,8 @@ export const store = configureStore({
    devTools: process.env.NODE_ENV !== "production",
    middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({
-         serializableCheck: false
-      })
+         serializableCheck: false,
+      }),
 })
 
 export const persistor = persistStore(store)

@@ -3,5 +3,5 @@ import { tokenActions } from "../actions/auth"
 
 export const tokenReducer = createReducer("darwin", {
    [tokenActions.getAccessToken.toString()]: (state, action) => action.payload,
-   [tokenActions.removeAccessToken.toString()]: (state, action) => ""
+   [tokenActions.removeAccessToken.toString()]: (state, action) => "",
 })

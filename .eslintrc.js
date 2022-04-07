@@ -1,16 +1,16 @@
 module.exports = {
    env: {
       browser: true,
-      es2021: true
+      es2021: true,
    },
    extends: ["plugin:react/recommended", "google", "prettier"],
    parser: "@typescript-eslint/parser",
    parserOptions: {
       ecmaFeatures: {
-         jsx: true
+         jsx: true,
       },
       ecmaVersion: 13,
-      sourceType: "module"
+      sourceType: "module",
    },
    plugins: ["react", "@typescript-eslint", "import"],
    rules: {
@@ -25,8 +25,8 @@ module.exports = {
             js: "never",
             jsx: "never",
             ts: "never",
-            tsx: "never"
-         }
+            tsx: "never",
+         },
       ],
       "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx", "tsx"] }],
       "import/extensions": [
@@ -36,27 +36,27 @@ module.exports = {
             js: "never",
             jsx: "never",
             ts: "never",
-            tsx: "never"
-         }
+            tsx: "never",
+         },
       ],
       "spaced-comment": [
          "error",
          "always",
          {
             line: {
-               markers: ["/"]
-            }
-         }
-      ]
+               markers: ["/"],
+            },
+         },
+      ],
    },
    settings: {
       react: {
-         version: "latest"
+         version: "detect",
       },
       "import/resolver": {
          node: {
-            extensions: [".js", ".jsx", ".tsx", "ts"]
-         }
-      }
-   }
+            extensions: [".js", ".jsx", ".tsx", "ts"],
+         },
+      },
+   },
 }
